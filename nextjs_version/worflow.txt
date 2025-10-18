@@ -1,0 +1,134 @@
+🎬 Step-by-Step User Experience
+1. Initial Page Load (Homepage)
+URL: http://localhost:3000
+
+What Appears:
+Black screen appears first
+Lottie intro animation starts playing:
+White "POSTER" logo animates in
+Letters move and form the logo
+Takes ~2.5 seconds
+Timeline progress bar at bottom (white line fills up)
+Intro fades out automatically after 3 seconds
+2. Homepage Revealed
+After intro disappears, you see:
+
+Header (Top)
+Logo (top left): Poster logo
+"menu." button (top right)
+Main Content - Video Slider
+Full-screen background video playing
+Left side panel with:
+Counter: "1/7"
+7 project names listed vertically:
+Veuve Clicquot x Jacquemus (active/bright)
+Dior Sauvage (dimmed)
+Miss Dior (dimmed)
+Eau Pure (dimmed)
+Conquest of Space (dimmed)
+FFT (dimmed)
+From Sunset to Sunrise (dimmed)
+Progress bar below list
+Interactive Elements
+Cursor changes when hovering:
+Over project names → Shows mini video preview
+Over main video → Shows "open [Project Name]" text with arrow
+Auto-advance: Every 5 seconds, automatically switches to next project
+Click project name: Instantly switches video
+Videos: All 7 videos playing in background (1080p), switching based on selection
+3. Scroll Down - Projects Grid
+Below the slider, you see:
+
+Projects Grid
+3 columns of project cards
+Each card shows:
+Project thumbnail/poster image
+Video preview on hover
+Title, director name, category
+Custom cursor with project details on hover
+4. Click "menu." Button
+When clicked:
+
+Full-Screen Menu Overlay
+Dark semi-transparent background with blur
+Navigation links (center):
+Homepage (white if current page)
+Works
+About
+Contact
+Category filters (below nav):
+all
+Featured film
+Commercials
+Music videos
+"close." button (top right)
+5. Navigate to "/works" Page
+URL: http://localhost:3000/works
+
+What You See:
+Same header (logo + menu)
+Projects grid only (no video slider)
+All projects displayed in 3-column grid
+Category filter still works
+Dark theme (black background)
+Video previews on hover
+Custom cursor on hover
+6. Navigate to "/about" Page
+URL: http://localhost:3000/about
+
+What You See:
+Light theme (white/gray background)
+Same header but with light logo (black)
+Company description (text about Poster)
+"view Poster reel 2025" button
+Office gallery (4 images in grid)
+Click Video Button:
+Full-screen video popup opens
+Shows Poster showreel video
+"close" button to exit
+7. Navigate to "/contact" Page
+URL: http://localhost:3000/contact
+
+What You See:
+Light theme (white/gray background)
+Same header with light logo
+Two columns:
+Left Column - Team:
+
+Head of Studio
+Cyril Bordesoulle
+cyril@posterco.tv
+Head of Post-Production
+Yéléna Dos Santos
+ydossantos@posterco.tv
+Right Column - Address:
+
+72 bld de Sébastopol
+Paris 75003
+Phone: +33 (0)1 48 01 99 66
+🖱️ Interactive Elements Throughout
+Custom Cursor (Desktop Only)
+Default: Small white dot
+Over project name: Mini video player preview (256x144px)
+Over main video: White bubble with "open [Project]" + arrow
+Friction physics:
+Arrow follows fast (friction=1)
+Text follows medium (friction=5)
+Video follows slow (friction=7)
+Mobile (<768px)
+Native cursor (no custom cursor)
+Touch-friendly controls
+Arrow buttons for navigation
+Single column grid layout
+⚙️ What's Happening Behind the Scenes
+On Every Page:
+Original CSS loads (
+build.min.css
+)
+Original JS loads (build.min.js)
+Fonts load (Azeret Mono + Monument Extended)
+JavaScript initializes:
+Cursor system starts
+Video lazy loading begins
+Menu interactions ready
+Animations setup

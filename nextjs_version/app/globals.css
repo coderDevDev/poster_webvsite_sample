@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Azeret Mono, sans-serif, system-ui;
+}
+
+/* Force content to be visible with z-index */
+.page-inner-content {
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+}
+
+.box--home {
+  position: relative;
+  z-index: 20;
+  opacity: 1;
+}
+
+.box--home__wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.homepage-inner-wrapper {
+  position: relative;
+  z-index: 5;
+}
