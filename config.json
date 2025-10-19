@@ -4,6 +4,13 @@
     "description": "Choose which site content to display: 'dubaifilmmaker' or 'posterco'",
     "options": ["dubaifilmmaker", "posterco"]
   },
+  "header": {
+    "logo": {
+      "position": "right",
+      "description": "Logo position in header: 'left', 'center', or 'right'",
+      "options": ["left", "center", "right"]
+    }
+  },
   "features": {
     "introAnimation": {
       "enabled": false,
@@ -11,29 +18,29 @@
     },
     "navigation": {
       "worksPage": {
-        "enabled": false,
+        "enabled": true,
         "description": "Enable/disable Works navigation link"
       },
       "aboutPage": {
-        "enabled": false,
+        "enabled": true,
         "description": "Enable/disable About navigation link"
       },
       "contactPage": {
-        "enabled": false,
+        "enabled": true,
         "description": "Enable/disable Contact navigation link"
       }
     },
     "projectsNav": {
-      "enabled": false,
+      "enabled": true,
       "description": "Enable/disable projects category navigation (Featured film, Commercials, etc.)"
     },
     "homeBoxLinks": {
       "videoClickable": {
-        "enabled": false,
+        "enabled": true,
         "description": "Enable/disable clicking on videos in box--home to open project page"
       },
       "mobileViewProject": {
-        "enabled": false,
+        "enabled": true,
         "description": "Enable/disable 'view project' button on mobile in box--home"
       }
     },
