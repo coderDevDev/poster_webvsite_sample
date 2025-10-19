@@ -85,11 +85,23 @@
         overflow: hidden !important;
       }
       
+      /* Universal Logo Compatibility - works with any logo size/shape */
+      .header__nav {
+        align-items: center !important;
+      }
+      
+      .header__nav .logo-link {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+      }
+      
       /* Custom Logo Sizing for Better UX */
       .header__logo {
         width: 180px !important;
         max-width: 180px;
-        height: auto;
+        height: auto !important;
+        display: block !important;
       }
       
       /* Tablet and larger screens */
@@ -122,15 +134,24 @@
           display: flex !important;
           flex-direction: row-reverse !important;
           justify-content: space-between !important;
-          align-items: flex-end !important;
+          align-items: center !important;
           width: 100% !important;
           gap: 24px !important;
+          min-height: 50px !important;
         }
         
         /* Logo on RIGHT */
         html body.template-homepage .app-container .header .header__nav .logo-link {
           width: auto !important;
           flex-shrink: 0 !important;
+          margin: 0 !important;
+          display: flex !important;
+          align-items: center !important;
+        }
+        
+        /* Ensure logo image centers properly */
+        html body.template-homepage .app-container .header .header__nav .logo-link .header__logo {
+          display: block !important;
           margin: 0 !important;
         }
         
@@ -165,10 +186,11 @@
           display: flex !important;
           flex-direction: row-reverse !important;
           justify-content: space-between !important;
-          align-items: flex-end !important;
+          align-items: center !important;
           width: 100% !important;
           gap: 24px !important;
           padding: 0 15px 0 20px !important;
+          min-height: 50px !important;
         }
         
         /* Logo on RIGHT - comes first visually due to row-reverse */
@@ -178,6 +200,14 @@
           flex-shrink: 0 !important;
           margin: 0 !important;
           padding-right: 20px !important;
+          display: flex !important;
+          align-items: center !important;
+        }
+        
+        /* Ensure logo image centers properly on mobile */
+        html body.template-homepage .app-container .header .header__nav .logo-link .header__logo {
+          display: block !important;
+          margin: 0 !important;
         }
         
         /* Menu button on LEFT - comes second visually due to row-reverse */
