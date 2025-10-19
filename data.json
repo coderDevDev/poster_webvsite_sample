@@ -12,7 +12,8 @@
     "client": "Sharjah Media City",
     "category": "Corporate / Media",
     "video_url": "https://video.wixstatic.com/video/8c2c22_9bc5cefe92ca49c58d92b7d7252782d5/1080p/mp4/file.mp4",
-    "page_url": "https://www.dubaifilmmaker.ae/shams-en"
+    "page_url": "https://www.dubaifilmmaker.ae/shams-en",
+    "poster_url": "https://res.cloudinary.com/dvqsa7ko7/image/upload/v1760832178/SHAMS-poster_kvqtws.jpg"
   },
   {
     "title": "KEEP THE DREAMS ALIVE TVC 03",
@@ -54,7 +55,8 @@
     "client": "SHUROOQ - Sharjah Investment and Development Authority",
     "category": "Corporate / Investment Promotion",
     "video_url": "https://video.wixstatic.com/video/8c2c22_981846f43f714f73845393b8c1d66a5f/1080p/mp4/file.mp4",
-    "page_url": "https://www.dubaifilmmaker.ae/moving-forward-en"
+    "page_url": "https://www.dubaifilmmaker.ae/moving-forward-en",
+    "poster_url": "https://res.cloudinary.com/dvqsa7ko7/image/upload/v1760833991/MOVING_FORWARD_erghda.png"
   },
   {
     "title": "SETUP YOUR BUSINESS",
