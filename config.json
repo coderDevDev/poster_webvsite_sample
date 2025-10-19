@@ -18,35 +18,35 @@
     },
     "navigation": {
       "worksPage": {
-        "enabled": true,
+        "enabled": false,
         "description": "Enable/disable Works navigation link"
       },
       "aboutPage": {
-        "enabled": true,
+        "enabled": false,
         "description": "Enable/disable About navigation link"
       },
       "contactPage": {
-        "enabled": true,
+        "enabled": false,
         "description": "Enable/disable Contact navigation link"
       }
     },
     "projectsNav": {
-      "enabled": true,
+      "enabled": false,
       "description": "Enable/disable projects category navigation (Featured film, Commercials, etc.)"
     },
     "homeBoxLinks": {
       "videoClickable": {
-        "enabled": true,
+        "enabled": false,
         "description": "Enable/disable clicking on videos in box--home to open project page"
       },
       "mobileViewProject": {
-        "enabled": true,
+        "enabled": false,
         "description": "Enable/disable 'view project' button on mobile in box--home"
       }
     },
     "projectsListing": {
       "clickable": {
-        "enabled": true,
+        "enabled": false,
         "description": "Enable/disable clicking on projects in bloc-projects-listing"
       }
     }

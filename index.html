@@ -102,6 +102,48 @@
         }
       }
       
+      /* Desktop/Tablet: Logo RIGHT, Menu LEFT */
+      @media (min-width: 768px) {
+        html body.template-homepage .app-container .header .header__nav {
+          display: flex !important;
+          flex-direction: row-reverse !important;
+          justify-content: space-between !important;
+          align-items: flex-end !important;
+          width: 100% !important;
+          gap: 24px !important;
+        }
+        
+        /* Logo on RIGHT */
+        html body.template-homepage .app-container .header .header__nav .logo-link {
+          width: auto !important;
+          flex-shrink: 0 !important;
+          margin: 0 !important;
+        }
+        
+        /* Menu navigation wrapper on LEFT */
+        html body.template-homepage .app-container .header .header__navigations-wrapper {
+          left: 0 !important;
+          right: auto !important;
+        }
+        
+        /* Navigation submenu on LEFT */
+        html body.template-homepage .app-container .header .header__subnav {
+          left: 0 !important;
+          right: auto !important;
+        }
+        
+        /* Menu items aligned to LEFT */
+        html body.template-homepage .app-container .header .header__subnav ul {
+          align-items: flex-start !important;
+          padding-left: 30px !important;
+        }
+        
+        html body.template-homepage .app-container .header .header__subnav li a {
+          justify-content: flex-start !important;
+          text-align: left !important;
+        }
+      }
+      
       /* Mobile: Swap positions - Logo RIGHT, Menu LEFT */
       @media (max-width: 767px) {
         /* Force flexbox layout with reverse order */
@@ -112,7 +154,7 @@
           align-items: flex-end !important;
           width: 100% !important;
           gap: 24px !important;
-          padding: 0 20px !important;
+          padding: 0 15px 0 20px !important;
         }
         
         /* Logo on RIGHT - comes first visually due to row-reverse */
@@ -121,6 +163,7 @@
           max-width: 180px !important;
           flex-shrink: 0 !important;
           margin: 0 !important;
+          padding-right: 20px !important;
         }
         
         /* Menu button on LEFT - comes second visually due to row-reverse */
