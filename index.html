@@ -71,6 +71,20 @@
     <title>DubaiFilmMaker – Homepage</title>
     
     <style>
+      /* Fix video thumbnail aspect ratio - prevent squishing */
+      .bloc-projects-listing .box--work__video.video-wrapper.has-poster img.video-img-poster {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center !important;
+      }
+      
+      /* Ensure video wrapper maintains proper dimensions */
+      .bloc-projects-listing .box--work__video.video-wrapper {
+        position: relative !important;
+        overflow: hidden !important;
+      }
+      
       /* Custom Logo Sizing for Better UX */
       .header__logo {
         width: 180px !important;
